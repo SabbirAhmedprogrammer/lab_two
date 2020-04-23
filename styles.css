@@ -1,6 +1,8 @@
-/* how would I position so the circles container stays proportionate to the screen
-rather than use pixel? When I tried it for div_one, it worked for left but not for bottom or top, making it jump and not move past a certain point. */
-/* also why does my bottom button change in mobile too when I only changed its position value and everything else in desktop? */
+/* #69696a  nav links for grey
+#000 for black
+#FFF  buttons   */
+
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
@@ -11,8 +13,6 @@ body {
     width:90%;
     margin: 0 auto;
 }
-
-.two {display:none;}
 
 h1 {
     font-size:12px;   
@@ -47,88 +47,96 @@ p {margin-left:5px;
     padding-left:10px;
 }
 
-@media only screen and (min-width: 768px) {
 
+@media only screen and (min-width:768px) {
+
+    div {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        width:90%;
+
+    }
 
 header {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding-top:10px;
-    
+    padding: 10px;
+    margin-top:5px;
 }
+
 
 ul {
     display:flex;
-    align-items:center;
+    margin-right:10px;
 }
 
 li {
+    padding:5px;
+    align-items:center;
     text-align:center;
-    padding: 0px 5px;
 }
 
-.section {
+.circle {
+    height:100px;
+    width:100px;
+    border: 1px solid black;
+    border-radius:50%
+}
+
+.flex {
+    display:flex;
+}
+
+p {
     width:50%;
-    display:inline-block;
-}
-
-}
-
-.section.one {
-    margin-top: 100px;
 }
 
 .section.two {
     position:relative;
-    width:30%
-
+    
 }
 
-.circles {
-    position:relative;
+.one {
+    height:300px;
+    width:300px;
+    position:absolute;
+    right:8%;
+    top: 10%;
+    background-color:  rgba(247, 136, 167, 0.6);
 }
 
-.two div {
-    border-radius:50%;
-}
-
-.div_one {
-    background-color:rgba(247, 136, 167, 0.6);
+.two {
     height:250px;
     width:250px;
     position:absolute;
-    left: 90%;
-    bottom: -100px;
-
+    top:25%;
+    right:1%;
+    background-color: rgba(247, 193, 162, 0.7);
 }
 
-.div_two {
-    background-color:rgba(247, 193, 162, 0.7) ;
+.three {
     height:200px;
     width:200px;
     position:absolute;
-    left:120%;
-    bottom: -198px;
-}
-
-.div_three {
+    right:1%;
     background-color: rgba(207, 130, 213, 0.6);
-    height:150px;
-    width:150px;
-    position:absolute;
-    left: 135%;
-    bottom:-50px;
-
 }
 
 .fixed {
     width: 100px;
     position:fixed;
-    bottom:0%;
-    left:50%;
-    transform: translateX(-50%);
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 1%;
 }
+
+
+
+
 
 
 }
