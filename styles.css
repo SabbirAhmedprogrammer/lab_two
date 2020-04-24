@@ -91,9 +91,6 @@ li {
     display:flex;
 }
 
-p {
-    
-}
 
 .section_one {
     width:50%;
@@ -108,8 +105,8 @@ p {
     height:300px;
     width:300px;
     position:absolute;
-    right:8%;
-    top: 10%;
+    left: 160px;
+    top:25px;
     background-color:  rgba(247, 136, 167, 0.6);
 }
 
@@ -117,8 +114,9 @@ p {
     height:250px;
     width:250px;
     position:absolute;
-    top:25%;
-    right:1%;
+    left:350px;
+    top:150px;
+    
     background-color: rgba(247, 193, 162, 0.7);
 }
 
@@ -126,7 +124,8 @@ p {
     height:200px;
     width:200px;
     position:absolute;
-    right:1%;
+    left:375px;
+    top:30px;
     background-color: rgba(207, 130, 213, 0.6);
 }
 
