@@ -93,20 +93,19 @@ li {
 
 
 .section_one {
-    width:50%;
+    flex:1;
 }
 
 .section_two {
     position:relative;
-    width:50%;
+    flex:1;
 }
 
 .one {
     height:300px;
     width:300px;
     position:absolute;
-    left: 160px;
-    top:25px;
+    right:100px;
     background-color:  rgba(247, 136, 167, 0.6);
 }
 
@@ -114,7 +113,7 @@ li {
     height:250px;
     width:250px;
     position:absolute;
-    left:350px;
+    right:0;
     top:150px;
     
     background-color: rgba(247, 193, 162, 0.7);
@@ -124,8 +123,8 @@ li {
     height:200px;
     width:200px;
     position:absolute;
-    left:375px;
-    top:30px;
+    right:0;
+    top:20px;
     background-color: rgba(207, 130, 213, 0.6);
 }
 
