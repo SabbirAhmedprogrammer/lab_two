@@ -92,12 +92,16 @@ li {
 }
 
 p {
+    
+}
+
+.section_one {
     width:50%;
 }
 
-.section.two {
+.section_two {
     position:relative;
-    
+    width:50%;
 }
 
 .one {
@@ -133,10 +137,4 @@ p {
     transform:translateX(-50%);
     bottom: 1%;
 }
-
-
-
-
-
-
 }
